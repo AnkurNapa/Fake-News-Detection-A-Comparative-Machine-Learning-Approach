@@ -1,0 +1,11 @@
+def fibonacci_series(n):
+    series = []
+    a, b = 0, 1
+    for _ in range(n):
+        series.append(a)
+        a, b = b, a + b
+    return series
+
+# Example usage
+n = 10  # Number of terms in the Fibonacci series
+print(f"Fibonacci series up to {n} terms: {fibonacci_series(n)}")
